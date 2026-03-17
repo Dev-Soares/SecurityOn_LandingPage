@@ -1,10 +1,14 @@
+import { Navbar } from "./components/sections/Navbar";
+import { Hero } from "./components/sections/Hero";
+import { ThemeProvider } from "./hooks/useTheme";
+
 function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-white">
-      <h1 className="text-4xl font-bold text-center pt-20">SecurityOn Landing</h1>
-      <p className="text-center mt-4 text-gray-500">Em construcao...</p>
-    </div>
-  )
+    <ThemeProvider>
+      <Navbar />
+      <Hero />
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
