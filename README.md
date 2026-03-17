@@ -1,4 +1,4 @@
-# SecurityOn — Guia para Landing Page
+# SecurityOn — Guia 
 
 ## O que é o SecurityOn?
 
