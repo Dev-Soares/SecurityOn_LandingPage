@@ -4,6 +4,7 @@ import { useTheme } from "../../hooks/useTheme";
 
 const navLinks = [
   { label: "Funcionalidades", href: "#features" },
+  { label: "Golpes Online", href: "#scam-data" },
   { label: "Como funciona", href: "#how-it-works" },
   { label: "Comunidade", href: "#stats" },
 ];
