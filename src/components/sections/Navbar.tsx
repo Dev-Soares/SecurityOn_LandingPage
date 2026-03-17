@@ -61,7 +61,9 @@ export function Navbar() {
               {dark ? <Moon size={20} weight="bold" /> : <Sun size={20} weight="bold" />}
             </button>
             <a
-              href="#"
+              href="https://securityon.vercel.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`relative px-4 py-2 text-sm transition-all duration-200 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-0 after:bg-blue-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-2/3 ${
                 dark ? "text-gray-300 hover:text-white" : "text-gray-600 hover:text-gray-900"
               }`}
@@ -69,7 +71,9 @@ export function Navbar() {
               Login
             </a>
             <a
-              href="#"
+              href="https://securityon.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-full shadow-lg shadow-blue-600/25 hover:shadow-blue-700/40 transition-all duration-200 hover:-translate-y-0.5"
             >
               Comece agora
@@ -127,7 +131,9 @@ export function Navbar() {
               <span>{dark ? "Modo escuro" : "Modo claro"}</span>
             </button>
             <a
-              href="#"
+              href="https://securityon.vercel.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
               className={`px-4 py-3 text-center rounded-lg transition-colors ${
                 dark ? "text-gray-300 hover:text-white" : "text-gray-600 hover:text-gray-900"
               }`}
@@ -135,7 +141,9 @@ export function Navbar() {
               Login
             </a>
             <a
-              href="#"
+              href="https://securityon.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-3 text-center font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-full transition-all duration-200"
             >
               Comece agora

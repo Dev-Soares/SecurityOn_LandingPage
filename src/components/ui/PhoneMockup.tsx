@@ -85,7 +85,7 @@ export function PhoneMockup({ href }: PhoneMockupProps) {
           <div className={`absolute -right-[2px] top-[120px] w-[2px] h-12 rounded-r ${dark ? "bg-gray-700" : "bg-gray-400"}`} />
 
           {/* Screen */}
-          <a href={href}>
+          <a href={href} target="_blank" rel="noopener noreferrer">
             <div className={`relative rounded-[2.4rem] overflow-hidden ${dark ? "bg-[#030712]" : "bg-white"}`}>
               {/* Dynamic Island */}
               <div className="absolute top-2 left-1/2 -translate-x-1/2 w-[90px] h-[26px] bg-black rounded-full z-20 flex items-center justify-center gap-2">
