@@ -51,17 +51,17 @@ export function Navbar() {
             <button
               onClick={toggleTheme}
               aria-label="Alternar tema"
-              className={`p-2 rounded-lg transition-all duration-200 cursor-pointer ${
+              className={`p-2 rounded-lg transition-all duration-300 cursor-pointer hover:rotate-[25deg] hover:scale-110 ${
                 dark
-                  ? "text-gray-400 hover:text-white hover:bg-white/[0.05]"
-                  : "text-gray-500 hover:text-gray-900 hover:bg-gray-100"
+                  ? "text-gray-400 hover:text-amber-300 hover:bg-amber-400/[0.08]"
+                  : "text-gray-500 hover:text-blue-500 hover:bg-blue-500/[0.08]"
               }`}
             >
               {dark ? <Moon size={20} weight="bold" /> : <Sun size={20} weight="bold" />}
             </button>
             <a
               href="#"
-              className={`px-4 py-2 text-sm transition-colors duration-200 ${
+              className={`relative px-4 py-2 text-sm transition-all duration-200 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-0 after:bg-blue-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-2/3 ${
                 dark ? "text-gray-300 hover:text-white" : "text-gray-600 hover:text-gray-900"
               }`}
             >
@@ -69,7 +69,7 @@ export function Navbar() {
             </a>
             <a
               href="#"
-              className="px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-full shadow-lg shadow-blue-600/25 hover:shadow-blue-500/40 transition-all duration-200 hover:-translate-y-0.5"
+              className="px-5 py-2.5 text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-full shadow-lg shadow-blue-600/25 hover:shadow-blue-700/40 transition-all duration-200 hover:-translate-y-0.5"
             >
               Comece agora
             </a>

@@ -8,7 +8,7 @@ export function Hero() {
   const { dark } = useTheme();
 
   return (
-    <section className={`relative min-h-screen flex items-center overflow-hidden pt-20 ${dark ? "" : "bg-gray-50"}`}>
+    <section className={`relative min-h-screen flex items-center overflow-hidden pt-28 pb-16 sm:pt-20 sm:pb-0 ${dark ? "" : "bg-gray-50"}`}>
       {/* ── Background effects ── */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div className={`absolute -top-[40%] -right-[20%] w-[70vw] h-[70vw] rounded-full blur-[120px] ${dark ? "bg-blue-600/[0.07]" : "bg-blue-400/[0.08]"}`} />
@@ -48,7 +48,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
               <a
                 href="#"
-                className="group flex items-center gap-2.5 px-7 py-3.5 font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-full shadow-xl shadow-blue-600/25 hover:shadow-blue-500/40 transition-all duration-300 hover:-translate-y-0.5"
+                className="group flex items-center gap-2.5 px-7 py-3.5 font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-full shadow-xl shadow-blue-600/25 hover:shadow-blue-700/40 transition-all duration-300 hover:-translate-y-0.5"
               >
                 Comece gratuitamente
                 <ArrowRight
