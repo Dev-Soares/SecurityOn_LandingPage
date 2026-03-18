@@ -1,6 +1,10 @@
+import { GithubLogo, BookOpen } from "@phosphor-icons/react";
 import { useTheme } from "../../hooks/useTheme";
+import type { ReactNode } from "react";
 
-const columns = [
+type FooterLink = { label: string; href: string; icon?: ReactNode };
+
+const columns: { title: string; links: FooterLink[] }[] = [
   {
     title: "Produto",
     links: [
@@ -13,14 +17,14 @@ const columns = [
     title: "Acesso",
     links: [
       { label: "SecurityOn", href: "https://securityon.vercel.app" },
-      { label: "Documentação", href: "https://github.com" },
+      { label: "Documentação", href: "https://github.com", icon: <BookOpen size={14} weight="bold" /> },
     ],
   },
   {
     title: "Repositórios",
     links: [
-      { label: "Frontend", href: "https://github.com/Dev-Soares/SecurityOn_Frontend" },
-      { label: "Backend", href: "https://github.com/Dev-Soares/SecurityOn_Backend" },
+      { label: "Frontend", href: "https://github.com/Dev-Soares/SecurityOn_Frontend", icon: <GithubLogo size={14} weight="bold" /> },
+      { label: "Backend", href: "https://github.com/Dev-Soares/SecurityOn_Backend", icon: <GithubLogo size={14} weight="bold" /> },
     ],
   },
 ];
@@ -74,12 +78,13 @@ export function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className={`text-sm transition-colors duration-200 ${
+                      className={`inline-flex items-center gap-1.5 text-sm transition-colors duration-200 ${
                         dark
                           ? "text-gray-500 hover:text-white"
                           : "text-gray-500 hover:text-gray-900"
                       }`}
                     >
+                      {link.icon}
                       {link.label}
                     </a>
                   </li>
