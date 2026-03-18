@@ -35,41 +35,50 @@ export function CallToAction() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div>
+          <div className="flex flex-col gap-8">
+            {/* Headline */}
             <h2
-              className={`font-syne font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-3 ${
+              className={`font-syne font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight ${
                 dark ? "text-white" : "text-gray-900"
               }`}
             >
-              Quer deixar de ser uma <span className={`${dark ? "text-blue-400" : "text-blue-600"}`}>vítima em potencial?</span>
+              Quer deixar de ser uma{" "}
+              <span className={dark ? "text-blue-400" : "text-blue-600"}>
+                vítima em potencial?
+              </span>
             </h2>
 
-            <p
-              className={`text-lg sm:text-xl leading-relaxed mt-8 ${
-                dark ? "text-gray-400" : "text-gray-500"
-              }`}
-            >
-              Aprenda com o
-            </p>
-            <div className="inline-flex items-center gap-3 mb-5">
-              <img
-                src={dark ? "/OnSecurityLight.png" : "/OnSecurityDark.png"}
-                alt=""
-                className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
-              />
-              <span className={`font-syne font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight ${dark ? "text-blue-400" : "text-blue-600"}`}>
-                SecurityOn
-              </span>
+            {/* Brand block */}
+            <div className="flex flex-col gap-1">
+              <p
+                className={`text-base sm:text-lg ${
+                  dark ? "text-gray-400" : "text-gray-500"
+                }`}
+              >
+                Aprenda com o
+              </p>
+              <div className="inline-flex items-center gap-3">
+                <img
+                  src="/OnSecurityDark.png"
+                  alt=""
+                  className="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                />
+                <span className="font-syne font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-blue-600">
+                  SecurityOn
+                </span>
+              </div>
             </div>
 
+            {/* Description */}
             <p
-              className={`text-base sm:text-lg leading-relaxed max-w-md mb-8 ${
-                dark ? "text-gray-500" : "text-gray-500"
+              className={`text-base sm:text-lg leading-relaxed max-w-md ${
+                dark ? "text-gray-400" : "text-gray-500"
               }`}
             >
               Conhecimento, comunidade e ferramentas para você nunca mais ser pego desprevenido.
             </p>
 
+            {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-start gap-3">
               <a
                 href="https://securityon.vercel.app"
