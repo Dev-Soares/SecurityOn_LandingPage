@@ -1,4 +1,4 @@
-# SecurityOn — Guia para Landing Page
+# SecurityOn — Guia 
 
 ## O que é o SecurityOn?
 
@@ -113,31 +113,4 @@ SecurityOn é uma plataforma comunitária de segurança e conscientização foca
 
 ---
 
-## Tom & Mensagem para Landing Page
 
-### Proposta de valor
-> "Proteja sua comunidade. Denuncie golpes, compartilhe alertas e acesse conteúdo educativo sobre segurança — tudo em uma plataforma colaborativa."
-
-### Pilares de comunicação
-1. **Segurança coletiva** — juntos somos mais fortes contra fraudes
-2. **Facilidade** — reportar um golpe em poucos cliques
-3. **Educação** — artigos práticos para se proteger no dia a dia
-4. **Comunidade** — conecte-se com pessoas que se importam com segurança
-
-### Tom de voz
-- Acolhedor mas sério quando necessário
-- Direto e acessível (sem jargão técnico)
-- Empoderador — o usuário faz a diferença
-
----
-
-## Referência Visual
-
-A landing page deve seguir o design system do app:
-- Fundo escuro como padrão (gray-950) com opção de tema claro
-- Azul (#3B82F6) como cor de destaque principal
-- Cantos arredondados (2xl) nos cards e containers
-- Fonte Inter com hierarquia clara de pesos
-- Animações sutis de hover e transição
-- Os 4 níveis de perigo com suas cores podem ser usados como elemento visual marcante
-- Layout responsivo mobile-first
