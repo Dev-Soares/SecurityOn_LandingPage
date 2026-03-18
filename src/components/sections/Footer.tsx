@@ -19,9 +19,8 @@ const columns = [
   {
     title: "Repositórios",
     links: [
-      { label: "Frontend", href: "https://github.com" },
-      { label: "Backend", href: "https://github.com" },
-      { label: "Landing Page", href: "https://github.com" },
+      { label: "Frontend", href: "https://github.com/Dev-Soares/SecurityOn_Frontend" },
+      { label: "Backend", href: "https://github.com/Dev-Soares/SecurityOn_Backend" },
     ],
   },
 ];

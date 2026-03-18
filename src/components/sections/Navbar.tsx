@@ -4,8 +4,8 @@ import { useTheme } from "../../hooks/useTheme";
 import { smoothScroll } from "../../utils/smoothScroll";
 
 const navLinks = [
-  { label: "Golpes Online", href: "#scam-data" },
   { label: "Funcionalidades", href: "#features" },
+  { label: "Golpes Online", href: "#scam-data" },
   { label: "Comece agora", href: "#cta" },
 ];
 
