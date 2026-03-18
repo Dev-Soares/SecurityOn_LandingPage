@@ -6,13 +6,17 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body,
 #root {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
@@ -33,11 +37,6 @@ body {
 /* Headlines */
 .font-syne {
   font-family: "Plus Jakarta Sans", "Inter", sans-serif;
-}
-
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Scrollbar personalizado */

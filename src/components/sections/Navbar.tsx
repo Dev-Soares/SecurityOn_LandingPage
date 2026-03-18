@@ -1,10 +1,11 @@
 import { useState, type MouseEvent } from "react";
 import { List, X, Sun, Moon } from "@phosphor-icons/react";
 import { useTheme } from "../../hooks/useTheme";
+import { smoothScroll } from "../../utils/smoothScroll";
 
 const navLinks = [
-  { label: "Funcionalidades", href: "#features" },
   { label: "Golpes Online", href: "#scam-data" },
+  { label: "Funcionalidades", href: "#features" },
   { label: "Comece agora", href: "#cta" },
 ];
 
@@ -13,7 +14,10 @@ function scrollTo(e: MouseEvent<HTMLAnchorElement>) {
   const id = e.currentTarget.getAttribute("href")?.slice(1);
   if (!id) return;
   const el = document.getElementById(id);
-  el?.scrollIntoView({ behavior: "smooth" });
+  if (!el) return;
+  const navHeight = 72;
+  const target = el.getBoundingClientRect().top + window.scrollY - navHeight;
+  smoothScroll(target);
 }
 
 export function Navbar() {
