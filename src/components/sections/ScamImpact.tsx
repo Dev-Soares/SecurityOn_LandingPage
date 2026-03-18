@@ -5,7 +5,7 @@ export function ScamImpact() {
   const { dark } = useTheme();
 
   return (
-    <section className={`relative py-16 sm:py-24 overflow-hidden ${dark ? "" : "bg-white"}`}>
+    <section id="scam-impact" className={`relative py-16 sm:py-24 overflow-hidden ${dark ? "" : "bg-white"}`}>
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div

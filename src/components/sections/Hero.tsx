@@ -8,7 +8,7 @@ export function Hero() {
   const { dark } = useTheme();
 
   return (
-    <section className={`relative min-h-screen flex items-center overflow-hidden pt-24 pb-12 sm:pt-28 sm:pb-16 lg:px-10 xl:px-6 ${dark ? "" : "bg-gray-50"}`}>
+    <section id="top" className={`relative min-h-screen flex items-center overflow-hidden pt-24 pb-12 sm:pt-28 sm:pb-16 lg:px-10 xl:px-6 ${dark ? "" : "bg-gray-50"}`}>
       {/* ── Background effects ── */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden>
         <div className={`absolute -top-[40%] -right-[20%] w-[70vw] h-[70vw] rounded-full blur-[120px] ${dark ? "bg-blue-600/[0.07]" : "bg-blue-400/[0.08]"}`} />

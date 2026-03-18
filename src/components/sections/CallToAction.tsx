@@ -5,6 +5,7 @@ export function CallToAction() {
 
   return (
     <section
+      id="cta"
       className={`relative py-16 sm:py-24 overflow-hidden ${
         dark ? "" : "bg-white"
       }`}

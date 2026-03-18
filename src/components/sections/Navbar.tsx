@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { useState, type MouseEvent } from "react";
 import { List, X, Sun, Moon } from "@phosphor-icons/react";
 import { useTheme } from "../../hooks/useTheme";
 
 const navLinks = [
   { label: "Funcionalidades", href: "#features" },
   { label: "Golpes Online", href: "#scam-data" },
-  { label: "Como funciona", href: "#how-it-works" },
-  { label: "Comunidade", href: "#stats" },
+  { label: "Comece agora", href: "#cta" },
 ];
+
+function scrollTo(e: MouseEvent<HTMLAnchorElement>) {
+  e.preventDefault();
+  const id = e.currentTarget.getAttribute("href")?.slice(1);
+  if (!id) return;
+  const el = document.getElementById(id);
+  el?.scrollIntoView({ behavior: "smooth" });
+}
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,7 +32,7 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-1 group">
+          <a href="#top" onClick={scrollTo} className="flex items-center gap-1 group">
             <img src={dark ? "/OnSecurityLight.png" : "/OnSecurityDark.png"} alt="SecurityOn logo" className="w-9 h-9" />
             <span className={`text-lg font-bold tracking-tight ${dark ? "text-white" : "text-blue-600"}`}>SecurityOn</span>
           </a>
@@ -36,6 +43,7 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
+                onClick={scrollTo}
                 className={`relative px-3 xl:px-4 py-2 text-sm transition-all duration-200 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-0 after:bg-blue-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-2/3 ${
                   dark
                     ? "text-gray-400 hover:text-white"
@@ -110,7 +118,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              onClick={() => setMenuOpen(false)}
+              onClick={(e) => { scrollTo(e); setMenuOpen(false); }}
               className={`px-4 py-3 rounded-lg transition-all duration-200 ${
                 dark
                   ? "text-gray-300 hover:text-white hover:bg-white/[0.05]"
