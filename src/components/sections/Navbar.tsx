@@ -31,12 +31,12 @@ export function Navbar() {
           </a>
 
           {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-0.5 xl:gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className={`relative px-4 py-2 text-sm transition-all duration-200 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-0 after:bg-blue-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-2/3 ${
+                className={`relative px-3 xl:px-4 py-2 text-sm transition-all duration-200 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-[2px] after:w-0 after:bg-blue-500 after:rounded-full after:transition-all after:duration-300 hover:after:w-2/3 ${
                   dark
                     ? "text-gray-400 hover:text-white"
                     : "text-gray-600 hover:text-gray-900"
@@ -48,7 +48,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop CTAs */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2 xl:gap-3">
             <button
               onClick={toggleTheme}
               aria-label="Alternar tema"
@@ -83,7 +83,7 @@ export function Navbar() {
           {/* Mobile hamburger */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className={`md:hidden p-2 transition-colors ${
+            className={`lg:hidden p-2 transition-colors ${
               dark ? "text-gray-400 hover:text-white" : "text-gray-500 hover:text-gray-900"
             }`}
             aria-label="Menu"
@@ -95,7 +95,7 @@ export function Navbar() {
 
       {/* Mobile dropdown */}
       <div
-        className={`md:hidden absolute top-full left-0 w-full backdrop-blur-xl border-b transition-all duration-300 ${
+        className={`lg:hidden absolute top-full left-0 w-full backdrop-blur-xl border-b transition-all duration-300 ${
           dark
             ? "bg-[#030712]/90 border-white/[0.06]"
             : "bg-white/90 border-gray-200"

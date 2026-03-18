@@ -30,7 +30,7 @@ export function FeatureCard({
     >
       {topAccent}
 
-      <div className="p-4 sm:p-5 lg:p-6">
+      <div className="pt-4 px-4 pb-7 sm:pt-5 sm:px-5 sm:pb-8 lg:pt-6 lg:px-6 lg:pb-10">
         {/* Number */}
         <span
           className={`font-syne font-extrabold text-3xl sm:text-4xl leading-none tracking-tighter block ${
