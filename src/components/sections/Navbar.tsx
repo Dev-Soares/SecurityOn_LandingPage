@@ -26,8 +26,8 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
           {/* Logo */}
           <a href="#" className="flex items-center gap-1 group">
-            <img src={dark ? "/OnSecurityLight.png" : "/OnSecurityDark.png"} alt="SecurityOn logo" className="w-11 h-11" />
-            <span className={`text-xl font-bold tracking-tight ${dark ? "text-white" : "text-blue-600"}`}>SecurityOn</span>
+            <img src={dark ? "/OnSecurityLight.png" : "/OnSecurityDark.png"} alt="SecurityOn logo" className="w-9 h-9" />
+            <span className={`text-lg font-bold tracking-tight ${dark ? "text-white" : "text-blue-600"}`}>SecurityOn</span>
           </a>
 
           {/* Desktop links */}
